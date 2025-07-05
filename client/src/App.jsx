@@ -1,14 +1,16 @@
 import './App.css';
 import './index.css';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Dashboard from './pages/Dashboard';
 
 function App() {
 
   return (
-    <>
-      <p className="read-the-docs bg-red-500">
-        HELLO WORLD!
-      </p>
-    </>
+    <Router>
+        <Navbar />
+        <Dashboard />
+    </Router>
   )
 }
 
