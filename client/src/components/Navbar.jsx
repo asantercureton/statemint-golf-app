@@ -1,23 +1,29 @@
 import React from "react";
+import { useState } from "react";
+
 
 const Navbar = () => {
-    return (
-        <div className="bg-green-700 flex items-center p-4">
-            <div className="statemint-logo">
-                <img src="" alt="StateMint Logo" />
-            </div>
+    const [loggedIn, setLoggedIn] = useState(false);
+    const handleLogin = () => {
+        setLoggedIn(!loggedIn);
+    }
 
-            <div className="search-bar">
-                <form>
-                    <button type="submit" className="search-button">ICON</button>
-                    <input type="text" placeholder="Search..." className="search-input" />
-                </form>
+
+    return (
+        <div className="bg-green-700 flex items-center justify-between p-4">
+            <div className="statemint-logo">
+                <img src="/" alt="StateMint Logo" />
             </div>
             <div className="user-profile">
-                <button>
-                    <img src="" alt="User Profile" className="profile-pic" />
-                    <span className="username">Username</span>
-                </button>
+                {loggedIn ? (
+                    <button className="w-35 h-35 rounded-full bg-yellow-400 hover:bg-yellow-500">
+                        <img src="/" alt="User Profile" className="profile-pic" />
+                        <span className="username">Username</span>
+                    </button>) : (
+                    <button className="w-35 h-35 rounded-full bg-yellow-400 hover:bg-yellow-500 border-4 border-indigo-500" onClick={handleLogin}>
+                        <span className="register">Login/Signup</span>
+                    </button>)
+                }
             </div>
 
         </div>);
