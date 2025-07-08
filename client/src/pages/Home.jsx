@@ -1,10 +1,9 @@
 import React from "react";
 import TeeTimeCard from "../components/TeeTimeCard";
-import BadgeCard from "../components/BadgeCard";
 
-const Dashboard = () => {
+const Home = () => {
     return (
-        <div className="dashboard-container bg-gray-100 h-screen p-6 overflow-y-scroll">
+        <div className="home-container bg-gray-100 h-210 md:h-full p-6 overflow-y-scroll">
             <TeeTimeCard teeTimes={{
                 course: 'Birkdale Golf Club',
                 date: 'July 6, 2025',
@@ -42,4 +41,4 @@ const Dashboard = () => {
         </div>);
 }
 
-export default Dashboard;
+export default Home;
