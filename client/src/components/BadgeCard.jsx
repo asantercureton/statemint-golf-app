@@ -1,7 +1,7 @@
 import React from "react";
 
 const BadgeCard = ({ badges }) => {
-    return (<div className="bg-emerald-600 p-4 rounded-xl shadow-lg h-35 w-full max-w-4xl mx-auto">
+    return (<div className="bg-emerald-400 p-4 rounded-xl shadow-lg h-35 w-full max-w-4xl mx-auto">
         <h2 className="text-2xl font-bold text-center text-white">BADGES</h2>
         <div className=" flex flex-row overflow-x-scroll no-scrollbar overflow-y-hidden p-2 w-full">
             {badges && badges.map((badge, index) => (
