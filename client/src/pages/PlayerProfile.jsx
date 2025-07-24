@@ -112,15 +112,20 @@ const PlayerProfile = () => {
                 <div className="text-center">
                     <h3 className="text-5xl font-bold mb-2">Saint Embargo</h3>
                     <p className="text-gray-600 text-2xl flex justify-center items-center"><PiGolfFill />Course Strategist</p>
-                    <div className="flex justify-between items-center mt-4">
-                        <div className="flex flex-col justify-center items-center bg-amber-200 p-4 w-30 rounded-xl mt-4">
-                            <p className="text-gray-600 text-4xl mt-2 mb-2">19.8</p>
-                            <p className="text-gray-600 text-lg mb-2">Handicap</p>
+                    <div className="grid grid-flow-col grid-col-1 justify-center gap-5 mt-4">
+                        <div className="flex flex-col justify-center items-center border border-amber-600 p-4 w-25 h-25 rounded-xl mt-4">
+                            <p className="text-amber-600 text-4xl mt-2 mb-2">19.8</p>
+                            <p className="text-emerald-800 text-xs mb-2">Handicap</p>
                         </div>
-                        {/* <div className="flex flex-col justify-center items-center bg-amber-200 p-4 w-1/3 rounded-xl mt-4">
-                            <p className="text-gray-600 text-4xl mt-2 mb-2">---</p>
-                            <p className="text-gray-600 text-lg mb-2">Trending</p>
-                        </div> */}
+                        <div className="flex flex-col justify-center items-center border border-amber-600 p-4 w-25 h-25 rounded-xl mt-4">
+                            <p className="text-amber-600 text-4xl mt-2 mb-2">42</p>
+                            <p className="text-emerald-800 text-xs mb-2">Best 9-Hole Score</p>
+                        </div>
+                        <div className="flex flex-col justify-center items-center border border-amber-600 p-4 w-25 h-25 rounded-xl mt-4">
+                            <p className="text-amber-600 text-4xl mt-2 mb-2">87</p>
+                            <p className="text-emerald-800 text-xs mb-2">Best 18-Hole Score</p>
+                        </div>
+                        
                     </div>
 
                     <div className="flex justify-center">
