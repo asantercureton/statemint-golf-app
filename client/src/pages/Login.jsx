@@ -1,40 +1,37 @@
 import React from "react";
 
 const Login = () => {
-  return (
-    <div className="flex items-center justify-center h-screen bg-gray-100">
-      <div className="bg-white p-8 rounded-lg shadow-md w-96">
-        <h2 className="text-2xl font-bold mb-6 text-center">Login</h2>
-        <form>
-          <div className="mb-4">
-            <label className="block text-sm font-medium mb-2" htmlFor="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-              required
-            />
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Handle login logic here
+    console.log("Login form submitted");
+    // You can add your authentication logic here, such as calling an API to verify credentials
+    // Redirect to dashboard or another page upon successful login
+    window.location.href = "/"; // Redirect to the dashboard
+  }
+
+  // Create a response login page for users to login to their account, or register if they don't have one
+  return ( 
+    <div className="login-container flex flex-col items-center justify-center min-h-screen bg-gray-100">
+      <div className="login-box bg-white p-8 rounded-lg shadow-md w-full max-w-md h-screen">
+        <h2 className="text-2xl font-bold mb-6 mt-6 text-center">Login to Your Account</h2>
+        <form className="space-y-4" onSubmit={handleSubmit}>
+          <div>
+            <label className="block text-gray-700">Username:</label>
+            <input type="email" className="w-full p-2 border border-gray-300 rounded mt-1" placeholder="Enter your username" />
           </div>
-          <div className="mb-6">
-            <label className="block text-sm font-medium mb-2" htmlFor="password">Password</label>
-            <input
-              type="password"
-              id="password"
-              className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-              required
-            />
+          <div>
+            <label className="block text-gray-700">Password:</label>
+            <input type="password" className="w-full p-2 border border-gray-300 rounded mt-1" placeholder="Enter your password" />
           </div>
-          <button
-            type="submit"
-            className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition duration-200"
-          >
-            Login
-          </button>
+          <button type="submit" className="w-full bg-blue-500 p-2 rounded hover:bg-blue-600 transition duration-200">Login</button>
         </form>
+        <p className="mt-4 text-center text-gray-600">
+          Don't have an account? <a href="/register" className="text-blue-500 hover:underline">Register here</a>
+        </p>
       </div>
-      <p className="mt-4 text-center text-sm text-gray-600">Don't have an account? <a href="/register" className="text-blue-600 hover:underline">Register</a></p>
     </div>
-  );
+   );
 }
 
 export default Login;
