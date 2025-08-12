@@ -44,7 +44,7 @@ Below is a screenshot of the project:
 <!-- [Live Link - GitHub Pages](https://asantercureton.github.io/statemint-golf-app/) -->
 
 
-### Installation
+## Installation
 Users can click the link above to view the live version of the web app on mobile and enjoy the experience!
 
 
