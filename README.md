@@ -39,9 +39,9 @@ Below is a screenshot of the project:
 - **Version Control**: Git, GitHub
 
 ## Links
-[Git Repo](https://github.com/asantercureton/therapeutic-typewriter)
+[Git Repo](https://github.com/asantercureton/statemint-golf-app)
 
-[Live Link - GitHub Pages](https://asantercureton.github.io/therapeutic-typewriter/)
+<!-- [Live Link - GitHub Pages](https://asantercureton.github.io/statemint-golf-app/) -->
 
 
 ### Installation
