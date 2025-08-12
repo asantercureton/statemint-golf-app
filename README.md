@@ -18,7 +18,7 @@ Welcome to the Statemint Golf App! This application is designed to enhance your 
 ## Screenshots
 Below is a screenshot of the project:
 
-[Image of Mockup](./client/public/assets/images/statemint-golf-mockup.png)
+![Image of Mockup](./client/public/assets/images/statemint-golf-mockup.png)
 
 
 ## Features
@@ -39,12 +39,12 @@ Below is a screenshot of the project:
 - **Version Control**: Git, GitHub
 
 ## Links
-[Git Repo](https://github.com/asantercureton/therapeutic-typewriter)
+[Git Repo](https://github.com/asantercureton/statemint-golf-app)
 
-[Live Link - GitHub Pages](https://asantercureton.github.io/therapeutic-typewriter/)
+<!-- [Live Link - GitHub Pages](https://asantercureton.github.io/statemint-golf-app/) -->
 
 
-### Installation
+## Installation
 Users can click the link above to view the live version of the web app on mobile and enjoy the experience!
 
 
