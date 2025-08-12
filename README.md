@@ -18,7 +18,7 @@ Welcome to the Statemint Golf App! This application is designed to enhance your 
 ## Screenshots
 Below is a screenshot of the project:
 
-[Image of Mockup](./client/public/assets/images/statemint-golf-mockup.png)
+![Image of Mockup](./client/public/assets/images/statemint-golf-mockup.png)
 
 
 ## Features
